@@ -7,7 +7,6 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                bat "cd SimpleTest"
                 bat "mvn clean verify" 
             }
             post {
