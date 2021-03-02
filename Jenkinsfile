@@ -7,13 +7,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/RUYMTM/testjenkins.git'
-                bat "mvn clean verify"
+                echo 'build'
             }
         }
         stage('Test') {
             steps {
-                bat 'mvn test'
+                echo 'test'
             }
             
         }
