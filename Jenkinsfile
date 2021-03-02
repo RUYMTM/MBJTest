@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage ('Build') {
             steps {
-                bat "mvn clean --file *.pom" 
+                bat "mvn clean verify" 
             }
             post {
                 success {
